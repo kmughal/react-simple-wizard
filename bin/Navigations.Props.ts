@@ -1,0 +1,5 @@
+export default interface NaviationsProps {
+  current: number;
+  setCurrent: React.Dispatch<React.SetStateAction<number>>;
+  totalComponents: number;
+}
