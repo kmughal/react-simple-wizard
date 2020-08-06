@@ -1,8 +1,4 @@
 import React from 'react';
-import { WizardProps } from '../bin';
-import StepsProps from '../bin/Steps.Props';
-import Wizard from '../bin/Wizard';
-
 import BaseComponentProps, {
   BaseValidatorProps,
   Form,
@@ -19,25 +15,7 @@ import BaseComponentProps, {
   ShowIfProps,
   TextBox,
 } from 'react-forms-typescript';
-
-const Step1: React.FC<StepsProps> = (props) => {
-  return <h1>Start</h1>;
-};
-
-const Step2: React.FC<StepsProps> = ({ state, setState }) => {
-  return (
-    <>
-      <h2>A simple counter {state ?? 0}</h2>
-      <button
-        onClick={(e) => {
-          setState(1 + (state ?? 0));
-        }}
-      >
-        +
-      </button>
-    </>
-  );
-};
+import { StepsProps } from '../../../bin';
 
 const Step3: React.FC<StepsProps> = ({ state, setState }) => {
   const formProps: FormProps = {
@@ -145,31 +123,4 @@ const Step3: React.FC<StepsProps> = ({ state, setState }) => {
   );
 };
 
-const IndexPage = () => {
-  const wizardProps: WizardProps = {
-    showNavigationOrientation: 'bottom',
-    showNavigationLinks: true,
-    steps: [
-      Step1,
-      Step2,
-      Step3,
-
-      (props) => {
-        return (
-          <>
-            <h1>Complete your review</h1>
-            <pre>{JSON.stringify(props.getAllStates(), null, 2)}</pre>
-          </>
-        );
-      },
-    ],
-  };
-  return (
-    <>
-      <h1>Simple Stateful Wizard Example</h1>
-      <Wizard wizardProps={wizardProps} />
-    </>
-  );
-};
-
-export default IndexPage;
+export default Step3;
