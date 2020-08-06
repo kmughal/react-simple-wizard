@@ -8004,10 +8004,10 @@ react-dom@^16.13.1:
     prop-types "^15.6.2"
     scheduler "^0.19.1"
 
-react-forms-typescript@1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/react-forms-typescript/-/react-forms-typescript-1.0.5.tgz#06508ee6b54e427a16b73dc4815face68ea67753"
-  integrity sha512-n4AV4Z6KBJaz/rldbPzMEaP/DGhhG4AwLMZZvqZ7SOP6624RhEswnjjyIaqf5gpx2V0GW/NOV+pZoWlrXqYRPQ==
+react-forms-typescript@1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/react-forms-typescript/-/react-forms-typescript-1.0.7.tgz#bc9d059965efab96e60cb7a55e5942e8e39b94a5"
+  integrity sha512-FYqFeamZlboit8cwuWfkqpOQB2Az9Q8XTM/kquBouhxs2kv+tEKuXY+d9ku/kQxS664uk+4o+bAvdavyx009yA==
 
 react-is@16.13.1, react-is@^16.12.0, react-is@^16.8.1:
   version "16.13.1"
