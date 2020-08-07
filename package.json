@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start -p $PORT",
     "test": "jest",
-    "lint": "eslint './bin/**/*.{ts,tsx}' --quiet --fix"
+    "lint": "eslint './bin/**/*.{ts,tsx}' --quiet --fix",
+    "build:assets" : "rollup -c"
   },
   "keywords": [],
   "author": "",
