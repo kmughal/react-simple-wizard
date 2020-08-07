@@ -1,18 +1,24 @@
 {
-  "name": "react-simple-wizard",
+  "name": "react-stateful-wizard",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A simple stateful wizard which make building wizard so easy",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/es/index.js",
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start -p $PORT",
     "test": "jest",
     "lint": "eslint './bin/**/*.{ts,tsx}' --quiet --fix",
-    "build:assets" : "rollup -c"
+    "build:assets": "rollup -c"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "React wizard",
+    "React stateful wizard",
+    "React hooks wizard",
+    "Simple React Wizard"
+  ],
+  "author": "Khurram Mughal",
   "license": "ISC",
   "dependencies": {
     "next": "9.5.1",
@@ -33,6 +39,7 @@
       "eslint --fix"
     ]
   },
+  "repository": "https://github.com/kmughal/react-simple-wizard",
   "engines": {
     "node": ">=12.18.3"
   },
