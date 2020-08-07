@@ -59,8 +59,24 @@ const Wizard: React.FC<{ wizardProps: WizardProps }> = ({ wizardProps }) => {
     goToPreviousStep: () => setCurrent(current - 1),
   };
 
+  React.useEffect(() => {
+    window.addEventListener('hashchange', (_) => {
+      const hash = (window.location.hash ?? '')
+        .replace('#/', '')
+        .toLocaleLowerCase();
+      const index = wizardProps.steps.findIndex(
+        (v) => v.name.toLocaleLowerCase() === hash
+      );
+
+      if (index > -1) {
+        setCurrent(index);
+      }
+    });
+  }, []);
+
   return (
     <section>
+      <h1>{step.name}</h1>
       {wizardProps.showHeading && wizardProps.heading && (
         <h1>{wizardProps.heading}</h1>
       )}
