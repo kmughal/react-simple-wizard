@@ -11,13 +11,13 @@ access all the states modified in each step. How to use this.
 
 First of all install this using npm or yarn 
 
-```
+```sh
 npm i react-stateful-wizard
 yarn add react-stateful-wizard
 ```
 
 
-```
+```jsx
 
   import { Wizard, WizardProps } from "react-simple-wizard"
 
@@ -84,7 +84,7 @@ yarn add react-stateful-wizard
 
 As it is a single page application you can navigate to any step by using the HTML5 single page naviagtion. Consider below example
 
-```
+```jsx
 
   const Step1 = (props) => {
     return <h1>Step 1</h1>
@@ -101,7 +101,7 @@ As it is a single page application you can navigate to any step by using the HTM
 
 Now if you are on the Step2 then in the address bar if you type 
 
-````
+````html
 
 http://localhost:1234/#/Step1 
 
