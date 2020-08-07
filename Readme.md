@@ -19,12 +19,30 @@ yarn add react-stateful-wizard
 
 ```jsx
 
-  import { Wizard, WizardProps } from "react-simple-wizard"
+  import { Wizard, WizardProps, StepsProps } from "react-simple-wizard"
+
+
+  const Step1: React.FC<StepsProps> = (props) => {
+    return <h1>Start</h1>;
+  };
+
+  const SimpleWatch: React.FC<StepsProps> = ({ state, setState }) => {
+    setInterval(() => setState(new Date()), 100);
+
+    return (
+      <>
+        <h2>A simple digital clock</h2>
+        <p>{(state ?? new Date()).toLocaleTimeString()}</p>
+      </>
+    );
+  };
 
   const wizardProps: WizardProps = {
     showNavigationOrientation: 'bottom',
     showNavigationLinks: true,
     steps: [
+    Step1,
+    SimpleWatch,
       (props) => {
         return (
           <>
