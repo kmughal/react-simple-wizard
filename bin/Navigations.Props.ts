@@ -5,6 +5,4 @@ export default interface NaviationsProps {
   showNextLink: boolean;
   showPreviousLink: boolean;
   goToStep: (stepIndex: number) => void;
-  goToNextStep: () => void;
-  goToPreviousStep: () => void;
 }

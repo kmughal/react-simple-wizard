@@ -46,7 +46,14 @@ const Wizard: React.FC<{ wizardProps: WizardProps }> = ({ wizardProps }) => {
     return result;
   };
 
-  const stepArgs: StepsProps = { state, setState, goToStep, getAllStates };
+  const stepArgs: StepsProps = {
+    state,
+    setState,
+    goToStep,
+    getAllStates,
+    goToNextStep: () => setCurrent(current + 1),
+    goToPreviousStep: () => setCurrent(current - 1),
+  };
   const step = wizardProps.steps[current];
   const navigationsArgs: NavigationsProps = {
     current,
@@ -55,8 +62,6 @@ const Wizard: React.FC<{ wizardProps: WizardProps }> = ({ wizardProps }) => {
     showNextLink,
     showPreviousLink,
     goToStep,
-    goToNextStep: () => setCurrent(current + 1),
-    goToPreviousStep: () => setCurrent(current - 1),
   };
 
   React.useEffect(() => {
