@@ -55,6 +55,8 @@ const Wizard: React.FC<{ wizardProps: WizardProps }> = ({ wizardProps }) => {
     showNextLink,
     showPreviousLink,
     goToStep,
+    goToNextStep: () => setCurrent(current + 1),
+    goToPreviousStep: () => setCurrent(current - 1),
   };
 
   return (

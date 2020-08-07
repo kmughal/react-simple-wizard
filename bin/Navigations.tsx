@@ -17,20 +17,28 @@ const Navigations: React.FC<{ navigationsProps: NavigationsProps }> = ({
     goToStep(newCurrent);
   };
 
+  if (!showPreviousLink && !showNextLink) {
+    return null;
+  }
+
   return (
-    <div>
+    <ul>
       {showPreviousLink && (
-        <a href="#" onClick={(_) => navigate(-1)}>
-          Previous
-        </a>
+        <li>
+          <a href="#" onClick={(_) => navigate(-1)}>
+            Previous
+          </a>
+        </li>
       )}
       {'    '}
       {showNextLink && (
-        <a href="#" onClick={(_) => navigate(1)}>
-          Next
-        </a>
+        <li>
+          <a href="#" onClick={(_) => navigate(1)}>
+            Next
+          </a>
+        </li>
       )}
-    </div>
+    </ul>
   );
 };
 
