@@ -66,13 +66,22 @@ const Step3: React.FC<StepsProps> = ({ state, setState }) => {
     validationMessage: 'Please provide the comments',
     value: state?.comments ?? 'NA',
   };
-
+  const choice =
+    state && state.choice_detail ? state.choice_detail : 'give_details';
   const radioButtonProps: RadioButtonProps = {
     legend: 'About your personal information',
     name: 'choice_detail',
     radioButtonOptions: [
-      new RadioButtonOption('Provide your details', 'give_details'),
-      new RadioButtonOption('No I dont want to give my details', 'no_details'),
+      new RadioButtonOption(
+        'Provide your details',
+        'give_details',
+        choice === 'give_details'
+      ),
+      new RadioButtonOption(
+        'No I dont want to give my details',
+        'no_details',
+        choice === 'no_details'
+      ),
     ],
     label: 'choice_deetail',
     id: 'choice_detail',

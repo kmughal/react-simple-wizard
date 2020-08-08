@@ -8061,10 +8061,10 @@ react-dom@^16.13.1:
     prop-types "^15.6.2"
     scheduler "^0.19.1"
 
-react-forms-typescript@1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/react-forms-typescript/-/react-forms-typescript-1.0.7.tgz#bc9d059965efab96e60cb7a55e5942e8e39b94a5"
-  integrity sha512-FYqFeamZlboit8cwuWfkqpOQB2Az9Q8XTM/kquBouhxs2kv+tEKuXY+d9ku/kQxS664uk+4o+bAvdavyx009yA==
+react-forms-typescript@1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/react-forms-typescript/-/react-forms-typescript-1.0.8.tgz#6d8e6f9b1f8242c81fccbe77a3ac90f52b4f9764"
+  integrity sha512-be+ROCDBCAPP0sMv51k1nn5YyCSy0Mbk/qpJVbKwiyktMB9cWaen1t7qg1TOYTmi94VjWWh8oN7zTaAqpcVWfA==
 
 react-is@16.13.1, react-is@^16.12.0, react-is@^16.8.1:
   version "16.13.1"
