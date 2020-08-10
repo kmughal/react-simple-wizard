@@ -7,6 +7,8 @@
 This is a simple stateful react wizard with zero styling. It uses the React hooks and enable you to update the state for each step. You will be able to
 access all the states modified in each step. How to use this.
 
+For more information and example please visit the repository.
+
 ### How to use this
 
 First of all install this using npm or yarn 

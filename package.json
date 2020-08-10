@@ -1,6 +1,6 @@
 {
   "name": "react-stateful-wizard",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple stateful wizard which make building wizard so easy",
   "main": "./dist/cjs/index.js",
   "module": "./dist/es/index.js",
