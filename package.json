@@ -21,7 +21,7 @@
   "author": "Khurram Mughal",
   "license": "ISC",
   "dependencies": {
-    "next": "9.5.1",
+    "next": "9.5.4",
     "react-forms-typescript": "1.0.8"
   },
   "peerDependencies": {
